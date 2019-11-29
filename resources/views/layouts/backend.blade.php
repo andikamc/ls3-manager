@@ -21,10 +21,10 @@
         <!-- Fonts and Styles -->
         @yield('css_before')
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,400i,600,700">
-        <link rel="stylesheet" id="css-main" href="{{ mix('/css/codebase.css') }}">
+        <link rel="stylesheet" id="css-main" href="{{ asset('/css/codebase.css') }}">
 
         <!-- You can include a specific file from public/css/themes/ folder to alter the default color theme of the template. eg: -->
-        <!-- <link rel="stylesheet" id="css-theme" href="{{ mix('/css/themes/corporate.css') }}"> -->
+        <!-- <link rel="stylesheet" id="css-theme" href="{{ asset('/css/themes/corporate.css') }}"> -->
         @yield('css_after')
 
         <!-- Scripts -->
@@ -270,27 +270,27 @@
                                         </a>
                                     </div>
                                     <div class="col-2 mb-5">
-                                        <a class="text-elegance" data-toggle="theme" data-theme="{{ mix('/css/themes/elegance.css') }}" href="javascript:void(0)">
+                                        <a class="text-elegance" data-toggle="theme" data-theme="{{ asset('/css/themes/elegance.css') }}" href="javascript:void(0)">
                                             <i class="fa fa-2x fa-circle"></i>
                                         </a>
                                     </div>
                                     <div class="col-2 mb-5">
-                                        <a class="text-pulse" data-toggle="theme" data-theme="{{ mix('/css/themes/pulse.css') }}" href="javascript:void(0)">
+                                        <a class="text-pulse" data-toggle="theme" data-theme="{{ asset('/css/themes/pulse.css') }}" href="javascript:void(0)">
                                             <i class="fa fa-2x fa-circle"></i>
                                         </a>
                                     </div>
                                     <div class="col-2 mb-5">
-                                        <a class="text-flat" data-toggle="theme" data-theme="{{ mix('/css/themes/flat.css') }}" href="javascript:void(0)">
+                                        <a class="text-flat" data-toggle="theme" data-theme="{{ asset('/css/themes/flat.css') }}" href="javascript:void(0)">
                                             <i class="fa fa-2x fa-circle"></i>
                                         </a>
                                     </div>
                                     <div class="col-2 mb-5">
-                                        <a class="text-corporate" data-toggle="theme" data-theme="{{ mix('/css/themes/corporate.css') }}" href="javascript:void(0)">
+                                        <a class="text-corporate" data-toggle="theme" data-theme="{{ asset('/css/themes/corporate.css') }}" href="javascript:void(0)">
                                             <i class="fa fa-2x fa-circle"></i>
                                         </a>
                                     </div>
                                     <div class="col-2 mb-5">
-                                        <a class="text-earth" data-toggle="theme" data-theme="{{ mix('/css/themes/earth.css') }}" href="javascript:void(0)">
+                                        <a class="text-earth" data-toggle="theme" data-theme="{{ asset('/css/themes/earth.css') }}" href="javascript:void(0)">
                                             <i class="fa fa-2x fa-circle"></i>
                                         </a>
                                     </div>
@@ -506,10 +506,10 @@
         <!-- END Page Container -->
 
         <!-- Codebase Core JS -->
-        <script src="{{ mix('js/codebase.app.js') }}"></script>
+        <script src="{{ asset('js/codebase.app.js') }}"></script>
 
         <!-- Laravel Scaffolding JS -->
-        <script src="{{ mix('js/laravel.app.js') }}"></script>
+        <script src="{{ asset('js/laravel.app.js') }}"></script>
 
         @yield('js_after')
     </body>
